@@ -2,6 +2,8 @@
 
 target은 binary class로, 평가는 macro f1으로 측정합니다.
 
+저번에 대회 참가하다가 개인적 일로 바빠지는 바람에 최종 제출을 못 해 방치된 기록 정리하는 데 초점을 두었습니다.
+
 ## 데이터셋
 
 이 프로젝트에서 사용된 데이터셋은 [데이터셋 출처](https://dacon.io/competitions/official/236179/data)에서 가져왔습니다.
