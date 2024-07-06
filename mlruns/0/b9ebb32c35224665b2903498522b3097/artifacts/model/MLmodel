@@ -1,0 +1,34 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.0
+mlflow_version: 2.14.2
+model_size_bytes: 21553251
+model_uuid: ef230e634e754770984cb53aaa0d2566
+run_id: b9ebb32c35224665b2903498522b3097
+signature:
+  inputs: '[{"type": "long", "name": "subscription_duration", "required": true}, {"type":
+    "long", "name": "recent_login_time", "required": true}, {"type": "double", "name":
+    "average_login_time", "required": true}, {"type": "double", "name": "average_time_per_learning_session",
+    "required": true}, {"type": "long", "name": "monthly_active_learning_days", "required":
+    true}, {"type": "long", "name": "total_completed_courses", "required": true},
+    {"type": "double", "name": "recent_learning_achievement", "required": true}, {"type":
+    "long", "name": "abandoned_learning_sessions", "required": true}, {"type": "long",
+    "name": "community_engagement_level", "required": true}, {"type": "string", "name":
+    "preferred_difficulty_level", "required": true}, {"type": "string", "name": "subscription_type",
+    "required": true}, {"type": "long", "name": "customer_inquiry_history", "required":
+    true}, {"type": "long", "name": "payment_pattern", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-07-06 08:07:35.918421'

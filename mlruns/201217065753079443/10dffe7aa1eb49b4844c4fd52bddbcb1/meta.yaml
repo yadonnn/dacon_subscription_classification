@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/subscription_classification_artifacts/10dffe7aa1eb49b4844c4fd52bddbcb1/artifacts
+deleted_time: 1720271020466
+end_time: 1720270896218
+entry_point_name: ''
+experiment_id: '201217065753079443'
+lifecycle_stage: deleted
+run_id: 10dffe7aa1eb49b4844c4fd52bddbcb1
+run_name: init rf
+run_uuid: 10dffe7aa1eb49b4844c4fd52bddbcb1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720270890240
+status: 4
+tags: []
+user_id: lys45

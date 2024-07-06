@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/mlruns/0/eb1b64e14da44a47b6474926595bac86/artifacts
+deleted_time: 1720256430118
+end_time: 1720252901566
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: eb1b64e14da44a47b6474926595bac86
+run_name: placid-fawn-669
+run_uuid: eb1b64e14da44a47b6474926595bac86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720252827864
+status: 3
+tags: []
+user_id: lys45

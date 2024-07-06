@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/mlruns/0/6fc89d717a244a2382624d9953f014d9/artifacts
+deleted_time: 1720256430114
+end_time: 1720253078805
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 6fc89d717a244a2382624d9953f014d9
+run_name: respected-fawn-924
+run_uuid: 6fc89d717a244a2382624d9953f014d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720253006808
+status: 3
+tags: []
+user_id: lys45

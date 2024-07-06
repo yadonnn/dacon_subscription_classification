@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/mlruns/0/eb399c9f90c042699c21a85749ca194d/artifacts
+deleted_time: 1720256430105
+end_time: 1720253988236
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: eb399c9f90c042699c21a85749ca194d
+run_name: victorious-slug-531
+run_uuid: eb399c9f90c042699c21a85749ca194d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720253982309
+status: 4
+tags: []
+user_id: lys45

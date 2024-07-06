@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/mlruns/0/0f084f7e68834799b6afc652fe238727/artifacts
+deleted_time: 1720280425594
+end_time: 1720263192907
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 0f084f7e68834799b6afc652fe238727
+run_name: beautiful-elk-866
+run_uuid: 0f084f7e68834799b6afc652fe238727
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720263186938
+status: 3
+tags: []
+user_id: lys45
