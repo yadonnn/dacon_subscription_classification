@@ -1,8 +1,9 @@
 artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/mlruns/0/8985f4bd7fcb4fffa8054cff7eab6515/artifacts
+deleted_time: 1720280425596
 end_time: 1720254267515
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 8985f4bd7fcb4fffa8054cff7eab6515
 run_name: thundering-hare-499
 run_uuid: 8985f4bd7fcb4fffa8054cff7eab6515
