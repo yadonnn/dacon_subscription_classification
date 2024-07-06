@@ -1,0 +1,9 @@
+artifact_location: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/test/test_artifacts
+creation_time: 1720287135726
+experiment_id: '647403247825866573'
+last_update_time: 1720287198519
+lifecycle_stage: deleted
+name: test2
+tags:
+  env: dev
+  version: '1.0'

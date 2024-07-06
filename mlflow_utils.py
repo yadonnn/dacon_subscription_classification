@@ -6,6 +6,7 @@ def create_mlflow_experiment(experiment_name: str, artifact_location: str, tags:
         experiment_id = mlflow.create_experiment(
             name=experiment_name, artifact_location=artifact_location, tags=tags
         )
+        print(f'Successfully created experiment env! ------ Experiment name is {experiment_name}')
     except:
         print(f'Experiment {experiment_name} already exists.')
         experiment_id = mlflow.get_experiment_by_name(experiment_name).experiment_id
@@ -22,3 +23,5 @@ def get_mlflow_experiment(experiment_id:str=None, experiment_name: str=None) -> 
         raise ValueError('experiment_id나 experiment_name 입력하셈.')
     
     return experiment
+
+
