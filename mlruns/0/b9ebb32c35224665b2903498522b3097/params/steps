@@ -1,0 +1,10 @@
+[('preprocessor', ColumnTransformer(remainder='passthrough',
+                  transformers=[('num', num_scaler(),
+                                 Index(['average_login_time', 'average_time_per_learning_session',
+       'recent_learning_achievement'],
+      dtype='object')),
+                                ('label',
+                                 label_scaler(mapping={'High': 2, 'Low': 0,
+                                                       'Medium': 1}),
+                                 'preferred_difficulty_level'),
+                                ('ohe', ohe_scaler(), 'subscription_type')])), ('rf', RandomForestClassifier())]

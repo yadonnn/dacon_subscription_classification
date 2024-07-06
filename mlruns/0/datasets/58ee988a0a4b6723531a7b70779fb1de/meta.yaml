@@ -1,0 +1,17 @@
+digest: a75d9a6c
+name: dataset
+profile: '{"num_rows": 1500, "num_elements": 19500}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "subscription_duration", "required":
+  true}, {"type": "long", "name": "recent_login_time", "required": true}, {"type":
+  "double", "name": "average_login_time", "required": true}, {"type": "double", "name":
+  "average_time_per_learning_session", "required": true}, {"type": "long", "name":
+  "monthly_active_learning_days", "required": true}, {"type": "long", "name": "total_completed_courses",
+  "required": true}, {"type": "double", "name": "recent_learning_achievement", "required":
+  true}, {"type": "long", "name": "abandoned_learning_sessions", "required": true},
+  {"type": "long", "name": "community_engagement_level", "required": true}, {"type":
+  "string", "name": "preferred_difficulty_level", "required": true}, {"type": "string",
+  "name": "subscription_type", "required": true}, {"type": "long", "name": "customer_inquiry_history",
+  "required": true}, {"type": "long", "name": "payment_pattern", "required": true}]}'
+source: '{"tags": {"mlflow.user": "lys45", "mlflow.source.name": "train.py", "mlflow.source.type":
+  "LOCAL", "mlflow.source.git.commit": "0c5e4ec11da4011e64d5642426e630fae0a32a0b"}}'
+source_type: code

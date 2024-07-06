@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/mlruns/0/1e7d673abc61457ea6a1702aed93e67c/artifacts
+deleted_time: 1720256430103
+end_time: 1720254150521
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 1e7d673abc61457ea6a1702aed93e67c
+run_name: thoughtful-mink-473
+run_uuid: 1e7d673abc61457ea6a1702aed93e67c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720254144570
+status: 4
+tags: []
+user_id: lys45
