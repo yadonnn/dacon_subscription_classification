@@ -1,7 +1,19 @@
 import mlflow
 from typing import Any
+import numpy as np
+from functools import wraps
 
-def create_mlflow_experiment(experiment_name: str, artifact_location: str, tags:dict[str,Any]) -> str:
+def set_or_create_experiment(experiment_name: str) -> str:
+    try:
+        experiment_id = mlflow.get_experiment_by_name(experiment_name).experiment_id
+    except:
+        experiment_id = mlflow.create_experiment(experiment_name)
+    finally:
+        mlflow.set_experiment(experiment_name=experiment_name)
+    
+    return experiment_id
+
+def create_mlflow_experiment(experiment_name: str, artifact_location: str, tags:dict[str,Any], func) -> str:
     try:
         experiment_id = mlflow.create_experiment(
             name=experiment_name, artifact_location=artifact_location, tags=tags
@@ -20,8 +32,19 @@ def get_mlflow_experiment(experiment_id:str=None, experiment_name: str=None) -> 
     elif experiment_name is not None:
         experiment = mlflow.get_experiment_by_name(experiment_name)
     else:
-        raise ValueError('experiment_id나 experiment_name 입력하셈.')
+        raise ValueError('Input experiment_id or experiment_name!')
     
     return experiment
 
-
+def log_mlflow_metric(func):
+    @wraps(func)
+    def wrapper(self, *args, **kargs):
+        with mlflow.start_run(run_name='cross_validate'):
+            results = func(self, *args, **kargs)
+            # print(f'cv results: {results}')
+            
+            for key, value in results.items():
+                mlflow.log_metric(key, np.round(np.mean(value), 4))
+                print(f'{key} : {np.round(np.mean(value), 4)} saved in mlflow.')
+        return results
+    return wrapper
