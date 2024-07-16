@@ -4,6 +4,8 @@ from pipeline import create_pipeline
 from crossvalidate import CrossValidate
 import mlflow
 from mlflow_utils import set_or_create_experiment
+from models import create_models_pipeline, models
+from sklearn.pipeline import Pipeline
 
 if __name__ == "__main__":
     #mlflow experiment 환경설정
@@ -17,7 +19,11 @@ if __name__ == "__main__":
 
     preprocessor = create_preprocessor(X)
     print(preprocessor)
-    pipeline = create_pipeline(preprocessor=preprocessor)
+    pipeline = Pipeline(steps=[
+        (create_pipeline(preprocessor=preprocessor)),
+        (create_models_pipeline(models=models))
+        ]
+        )
 
     cv = CrossValidate(pipeline, X_train, y_train)
     cv.classifier()
