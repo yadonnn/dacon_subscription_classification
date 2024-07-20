@@ -1,8 +1,9 @@
 artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/subscription_classification_artifacts/6e9fbb2afe4f4e07bbec7ebb6fe6e89f/artifacts
+deleted_time: 1721471072098
 end_time: 1720270933333
 entry_point_name: ''
 experiment_id: '201217065753079443'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 6e9fbb2afe4f4e07bbec7ebb6fe6e89f
 run_name: init rf
 run_uuid: 6e9fbb2afe4f4e07bbec7ebb6fe6e89f
