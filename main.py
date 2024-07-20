@@ -9,7 +9,7 @@ from sklearn.pipeline import Pipeline
 
 if __name__ == "__main__":
     #mlflow experiment 환경설정
-    experiment_name = 'te'
+    experiment_name = 'subscription_classification'
     set_or_create_experiment(experiment_name=experiment_name)
 
     train, test = read_df()
@@ -18,13 +18,17 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = split_data(X, y)
 
     preprocessor = create_preprocessor(X)
-    print(preprocessor)
-    pipeline = Pipeline(steps=[
-        (create_pipeline(preprocessor=preprocessor)),
-        (create_models_pipeline(models=models))
-        ]
-        )
-
-    cv = CrossValidate(pipeline, X_train, y_train)
-    cv.classifier()
+    X_train_t = preprocessor.fit_transform(X_train)
+    X_test_t = preprocessor.transform(X_test)
+    # X_train = np.load('test/X_train_transformed.npy')
+    # X_test = np.load('test/X_test_transformed.npy')
+    # pipeline = Pipeline(steps=[
+    #     (create_pipeline(preprocessor=preprocessor)),
+    #     (create_models_pipeline(models=models))
+    #     ]
+    #     )
+    for name, model in models.items():
+        pipeline = Pipeline(steps=[(name, model)])
+        cv = CrossValidate(pipeline, X_train_t, y_train)
+        cv.classifier()
 

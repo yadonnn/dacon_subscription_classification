@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/mlruns/666724671198576824/44a49c64c0e24483a35d54f70b7c148b/artifacts
+end_time: 1721450653204
+entry_point_name: ''
+experiment_id: '666724671198576824'
+lifecycle_stage: active
+run_id: 44a49c64c0e24483a35d54f70b7c148b
+run_name: CatBoost
+run_uuid: 44a49c64c0e24483a35d54f70b7c148b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721450651179
+status: 3
+tags: []
+user_id: lys45
