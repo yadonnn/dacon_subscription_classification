@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/subscription_classification_artifacts/763c6ac6401c4010a8ec8721414783d0/artifacts
+end_time: 1721571575890
+entry_point_name: ''
+experiment_id: '201217065753079443'
+lifecycle_stage: active
+run_id: 763c6ac6401c4010a8ec8721414783d0
+run_name: LGBM
+run_uuid: 763c6ac6401c4010a8ec8721414783d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721571575212
+status: 3
+tags: []
+user_id: lys45

@@ -27,6 +27,7 @@ if __name__ == "__main__":
     #     (create_models_pipeline(models=models))
     #     ]
     #     )
+    print(X_train_t.shape, X_test_t.shape)
     for name, model in models.items():
         pipeline = Pipeline(steps=[(name, model)])
         cv = CrossValidate(pipeline, X_train_t, y_train)

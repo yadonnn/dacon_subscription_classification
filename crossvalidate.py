@@ -16,7 +16,7 @@ class CrossValidate:
             'Precision' : make_scorer(precision_score),
             'Recall' : make_scorer(recall_score)
         }
-        results = cross_validate(self.pipeline, self.X_train, self.y_train, scoring=scoring, cv=5)
+        results = cross_validate(self.pipeline, self.X_train, self.y_train, scoring=scoring, cv=5, return_train_score=True)
         print(results)
 
         return results
