@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/mlruns/0/8d2af1d6a7824d04b7fe42e5aeda367d/artifacts
+end_time: 1721541424656
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8d2af1d6a7824d04b7fe42e5aeda367d
+run_name: clumsy-bass-550
+run_uuid: 8d2af1d6a7824d04b7fe42e5aeda367d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721541424518
+status: 3
+tags: []
+user_id: lys45
