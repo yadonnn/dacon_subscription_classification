@@ -45,7 +45,7 @@ def log_mlflow_metric(func):
         else:
             run_name = 'set pipeline'
         
-        with mlflow.start_run(run_name=run_name):
+        with mlflow.start_run(run_name=run_name, nested=True):
             results = func(self, *args, **kargs)
             # print(f'cv results: {results}')
             
@@ -53,5 +53,24 @@ def log_mlflow_metric(func):
             for key, value in results.items():
                 mlflow.log_metric(key, np.round(np.mean(value), 4))
                 print(f'{key} : {np.round(np.mean(value), 4)} saved in mlflow.')
+        return results
+    return wrapper
+
+def log_cv_mlflow_metric(func):
+    @wraps(func)
+    def wrapper(self, *args, **kargs):
+        # mlflow 기록 제목 설정
+        if isinstance(self.pipeline, Pipeline):
+            run_name = self.pipeline.steps[-1][0]
+        else:
+            run_name = 'set pipeline'
+
+        with mlflow.start_run(run_name='cross-validate'):
+            results = func(self, *args, **kargs)
+            # print(f'cv results: {results}')
+            with mlflow.start_run(run_name=run_name, nested=True):       
+                for key, value in results.items():
+                    mlflow.log_metric(key, np.round(np.mean(value), 4))
+                    print(f'{key} : {np.round(np.mean(value), 4)} saved in mlflow.')
         return results
     return wrapper

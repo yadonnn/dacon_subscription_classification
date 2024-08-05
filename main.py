@@ -6,6 +6,7 @@ import mlflow
 from mlflow_utils import set_or_create_experiment
 from models import create_models_pipeline, models
 from sklearn.pipeline import Pipeline
+from imblearn.over_sampling import SMOTE
 
 if __name__ == "__main__":
     #mlflow experiment 환경설정
@@ -17,9 +18,16 @@ if __name__ == "__main__":
     print(X.shape, y.shape)
     X_train, X_test, y_train, y_test = split_data(X, y)
 
+    
+
     preprocessor = create_preprocessor(X)
     X_train_t = preprocessor.fit_transform(X_train)
     X_test_t = preprocessor.transform(X_test)
+
+    #smote 추가
+    smote = SMOTE(random_state=42)
+    X_train_res, y_train_res = smote.fit_resample(X_train_t, y_train)
+
     # X_train = np.load('test/X_train_transformed.npy')
     # X_test = np.load('test/X_test_transformed.npy')
     # pipeline = Pipeline(steps=[
@@ -28,8 +36,9 @@ if __name__ == "__main__":
     #     ]
     #     )
     print(X_train_t.shape, X_test_t.shape)
-    for name, model in models.items():
-        pipeline = Pipeline(steps=[(name, model)])
-        cv = CrossValidate(pipeline, X_train_t, y_train)
-        cv.classifier()
+    with mlflow.start_run(run_name='cross-validate'):
+        for name, model in models.items():
+            pipeline = Pipeline(steps=[(name, model)])
+            cv = CrossValidate(pipeline, X_train_res, y_train_res)
+            cv.classifier()
 

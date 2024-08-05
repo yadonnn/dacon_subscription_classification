@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/subscription_classification_artifacts/141f0c5bea3741faa8a7cc87e54900d9/artifacts
+end_time: 1721745741155
+entry_point_name: ''
+experiment_id: '201217065753079443'
+lifecycle_stage: active
+run_id: 141f0c5bea3741faa8a7cc87e54900d9
+run_name: RandomForest
+run_uuid: 141f0c5bea3741faa8a7cc87e54900d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721745732331
+status: 3
+tags: []
+user_id: lys45

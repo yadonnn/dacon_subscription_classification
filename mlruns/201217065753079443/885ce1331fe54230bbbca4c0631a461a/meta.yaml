@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/subscription_classification_artifacts/885ce1331fe54230bbbca4c0631a461a/artifacts
+end_time: 1721743547241
+entry_point_name: ''
+experiment_id: '201217065753079443'
+lifecycle_stage: active
+run_id: 885ce1331fe54230bbbca4c0631a461a
+run_name: XGBoost
+run_uuid: 885ce1331fe54230bbbca4c0631a461a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721743547187
+status: 3
+tags: []
+user_id: lys45

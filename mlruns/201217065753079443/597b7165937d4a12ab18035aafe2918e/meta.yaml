@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/python_practice/DACON/subscription_classification/dacon_subscription_classification/subscription_classification_artifacts/597b7165937d4a12ab18035aafe2918e/artifacts
+end_time: 1721743546317
+entry_point_name: ''
+experiment_id: '201217065753079443'
+lifecycle_stage: active
+run_id: 597b7165937d4a12ab18035aafe2918e
+run_name: cross-validate
+run_uuid: 597b7165937d4a12ab18035aafe2918e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721743542833
+status: 3
+tags: []
+user_id: lys45
